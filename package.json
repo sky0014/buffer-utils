@@ -1,0 +1,29 @@
+{
+  "name": "sky-buffer-utils",
+  "version": "1.0.0",
+  "description": "Some utils that make you handle ArrayBuffer easier.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "set DEBUG=*,-babel && npm run build && node dist/index.js",
+    "build": "babel src -d dist --extensions \".ts\"",
+    "pub": "npm run build && npm publish --registry=http://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sky0014/buffer-utils.git"
+  },
+  "keywords": [],
+  "author": "sky0014 <sky-wang@qq.com>",
+  "bugs": {
+    "url": "https://github.com/sky0014/buffer-utils/issues"
+  },
+  "homepage": "https://github.com/sky0014/buffer-utils/#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-typescript": "^7.9.0"
+  }
+}
