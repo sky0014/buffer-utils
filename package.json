@@ -1,6 +1,6 @@
 {
   "name": "sky-buffer-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Some utils that make you handle ArrayBuffer easier.",
   "main": "dist/index.js",
   "scripts": {

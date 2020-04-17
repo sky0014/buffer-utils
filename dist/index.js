@@ -15,7 +15,15 @@ Object.defineProperty(exports, "BufferWriter", {
     return _bufferWriter.BufferWriter;
   }
 });
+Object.defineProperty(exports, "bufferConcat", {
+  enumerable: true,
+  get: function get() {
+    return _bufferConcat.bufferConcat;
+  }
+});
 
-var _bufferReader = require("../dist/buffer-reader");
+var _bufferReader = require("./buffer-reader");
 
-var _bufferWriter = require("../dist/buffer-writer");
+var _bufferWriter = require("./buffer-writer");
+
+var _bufferConcat = require("./buffer-concat");
