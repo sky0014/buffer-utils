@@ -1,7 +1,9 @@
-import { BufferReader } from "../dist/buffer-reader"
-import { BufferWriter } from "../dist/buffer-writer"
+import { BufferReader } from "./buffer-reader"
+import { BufferWriter } from "./buffer-writer"
+import { bufferConcat } from "./buffer-concat"
 
 export {
     BufferReader,
-    BufferWriter
+    BufferWriter,
+    bufferConcat
 }

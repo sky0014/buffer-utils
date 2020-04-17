@@ -11,7 +11,7 @@ npm install sky-buffer-utils
 ## Usage
 
 ```js
-import { BufferReader, BufferWriter } from "sky-buffer-utils";
+import { BufferReader, BufferWriter, bufferConcat } from "sky-buffer-utils";
 
 // 假设某一协议：4字节字符串'flag' + 4字节包长度（大端）+ 1字节版本 + payload
 
@@ -36,4 +36,10 @@ function encode(data) {
     .write(data);
   return buffer;
 }
+
+// buffer concat, just like Array.concat
+const buffer1 = new Uint8Array([1,2]);
+const buffer2 = new Uint8Array([3,4]);
+const buffer3 = new Uint8Array([5,6]);
+const buffer = bufferConcat([buffer1,buffer2,buffer3]); // Uint8Array([1,2,3,4,5,6])
 ```
