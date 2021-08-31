@@ -1,6 +1,6 @@
 {
   "name": "sky-buffer-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Some utils that make you handle ArrayBuffer easier.",
   "main": "dist/index.js",
   "scripts": {
@@ -18,7 +18,9 @@
     "DataView",
     "buffer",
     "BufferWriter",
-    "BufferReader"
+    "BufferReader",
+    "bit",
+    "ByteArray"
   ],
   "author": "sky0014 <sky-wang@qq.com>",
   "bugs": {

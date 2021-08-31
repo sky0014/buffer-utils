@@ -14,13 +14,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var BufferWriter = /*#__PURE__*/function () {
-  _createClass(BufferWriter, [{
-    key: "offset",
-    get: function get() {
-      return this._offset;
-    }
-  }]);
-
   function BufferWriter(buf) {
     _classCallCheck(this, BufferWriter);
 
@@ -38,6 +31,11 @@ var BufferWriter = /*#__PURE__*/function () {
   }
 
   _createClass(BufferWriter, [{
+    key: "offset",
+    get: function get() {
+      return this._offset;
+    }
+  }, {
     key: "write",
     value: function write(buf) {
       var array = buf instanceof ArrayBuffer ? new Uint8Array(buf) : buf;

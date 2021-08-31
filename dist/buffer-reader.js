@@ -14,13 +14,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var BufferReader = /*#__PURE__*/function () {
-  _createClass(BufferReader, [{
-    key: "offset",
-    get: function get() {
-      return this._offset;
-    }
-  }]);
-
   function BufferReader(buf) {
     _classCallCheck(this, BufferReader);
 
@@ -35,6 +28,11 @@ var BufferReader = /*#__PURE__*/function () {
   }
 
   _createClass(BufferReader, [{
+    key: "offset",
+    get: function get() {
+      return this._offset;
+    }
+  }, {
     key: "read",
     value: function read(length) {
       if (length === undefined) {
